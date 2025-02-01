@@ -1,0 +1,110 @@
+body{
+    background-color: #f9f1f7; /* Soft pastel pink background */
+
+}
+.march-page-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f9f1f7; /* Soft pastel pink background */
+    padding: 2rem 0; /* Add spacing around the page */
+    border-radius: 10px; /* Rounded edges for the page container */
+  }
+  
+  /* Hero Section */
+  .march-hero {
+    position: relative;
+    width: 100%;
+    height: 35%; /* or however tall you want the banner */
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .march-hero-content {
+    padding: 1rem 2rem;
+    text-align: center;
+    border-radius: 8px;
+  }
+  
+  .march-hero-content h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #d61a5b; /* romantic pink/red */
+  }
+  .march-hero-content h2 {
+    margin-top: 0.5rem;
+    font-weight: normal;
+    color: #555;
+  }
+  
+  /* Description Section */
+  .march-description {
+    margin: 2rem auto;
+    padding: 1.5rem 2rem;
+    max-width: 800px;
+    color: #444;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    background: rgba(255, 255, 255, 0.8); /* Transparent white background */
+    border-radius: 10px; /* Rounded corners for the text box */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for floating effect */
+    text-align: justify;
+  }
+  
+  /* Gallery Section */
+  .march-gallery {
+    margin-left: 10%;
+    margin-right: 10%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 2rem;
+    justify-items: center; /* Center align circular containers */
+  }
+  
+  .march-gallery-item {
+    width: 180px; /* Set the size of the circular container */
+    height: 180px; /* Ensure a perfect square for the circle */
+    border-radius: 50%; /* Make it circular */
+    overflow: hidden; /* Crop any content outside the circle */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animations */
+  }
+  
+  .march-gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image scales and covers the circle */
+    border-radius: 50%; /* Maintain the circular crop */
+  }
+  
+  .march-gallery-item:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* Elevate shadow on hover */
+  }
+  
+  /* Navigation Links (Back to Timeline, etc.) */
+  .march-nav-links {
+    text-align: center;
+    margin: 2rem 0;
+  }
+  
+  .back-link {
+    text-decoration: none;
+    color: #d61a5b;
+    border: 2px solid #d61a5b;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.2s, color 0.2s;
+  }
+  
+  .back-link:hover {
+    background-color: #d61a5b;
+    color: #fff;
+  }
+  
