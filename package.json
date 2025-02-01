@@ -1,4 +1,9 @@
 {
+  "homepage": "https://sreyash-layek.github.io/firstAnniversary",
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+},
   "name": "client",
   "version": "0.1.0",
   "private": true,
