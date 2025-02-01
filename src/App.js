@@ -23,7 +23,7 @@ function App() {
     <Router>
       <Routes>
         {/* Index page (home) */}
-        <Route path="/" element={<Home />} />
+        <Route path="/firstAnniversary" element={<Home />} />
         <Route path="/march" element={<MarchPage />} />
         <Route path="/april" element={<AprilPage />} />
         <Route path="/may" element={<MayPage />} />
